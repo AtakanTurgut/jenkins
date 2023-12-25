@@ -128,8 +128,8 @@ PubkeyAuthentication yes
 Key'ler için  <-  ( Git Bash ) :
 
 ssh-keygen
-	> enter -> default - publicKey = sunucu | privateKey = kullanıcı
-	> publicKey = sunucu üzerinde authorized_keys.txt dosyası üzerine yazar
+	- enter -> default - publicKey = sunucu | privateKey = kullanıcı
+	- publicKey = sunucu üzerinde authorized_keys.txt dosyası üzerine yazar
 ```
 
 ```cs
@@ -153,7 +153,7 @@ Jenkins'i Yönet >> Credentials >> Stores scoped to Jenkins >> (global) >> Add C
 Kind:
 	SSH Username with private key
 	Scope:
-		Global (Jenkins, nodes, items, all child items, etc)
+	Global (Jenkins, nodes, items, all child items, etc)
 	ID:
 		win-agent-SSHKey
 	Username:
