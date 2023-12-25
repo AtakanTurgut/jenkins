@@ -124,7 +124,7 @@ PubkeyAuthentication yes
 #AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 ```
 
-```bash
+```
 Key'ler için  <-  ( Git Bash ) :
 
 ssh-keygen
@@ -145,7 +145,7 @@ C:\Users\Excalibur\.ssh
 
 ### Jenkins Agent Setup
 
-```bash
+```cs
 Credentials:
 http://localhost:8080/manage/credentials/store/system/domain/_/newCredentials
 Jenkins'i Yönet >> Credentials >> Stores scoped to Jenkins >> (global) >> Add Credentials
@@ -163,7 +163,7 @@ Kind:
 	Create
 ```
 
-```bash
+```cs
 Nodes:
 http://localhost:8080/manage/computer/
 Jenkins'i Yönet >> Nodes (Sunucular ve Bulutlar) >> New Node
