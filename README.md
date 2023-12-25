@@ -199,17 +199,17 @@ Yeni Öğe >> Pipeline
 Pipeline:
 	Pipeline script <- Hello Word:
 		pipeline {
-    		agent { label 'win-agent' }
+			agent { label 'win-agent' }
 
-    		stages {
-       			stage('Build') {
-            		steps {
-                		bat 'rm -rf simple-maven-project'
-                		bat 'git clone https://github.com/mhalilmuti/simple-maven-project'
-                		bat 'cd simple-maven-project && mvn -DskipTests clean'
-                		bat 'cd simple-maven-project && mvn -DskipTests compile'
-            		}
-        		}
-    		}
+			stages {
+				stage('Build') {
+					steps {
+						bat 'rm -rf simple-maven-project'
+						bat 'git clone https://github.com/mhalilmuti/simple-maven-project'
+						bat 'cd simple-maven-project && mvn -DskipTests clean'
+						bat 'cd simple-maven-project && mvn -DskipTests compile'
+					}
+				}
+			}
 		}
 ```
