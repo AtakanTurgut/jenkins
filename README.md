@@ -116,10 +116,9 @@ PowerShell - Administrator:
 ```
 
 ```yml
-
----
+...
 PubkeyAuthentication yes
----
+...
 #Match Group administrators
 #AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 ```
