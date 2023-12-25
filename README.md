@@ -124,12 +124,12 @@ PubkeyAuthentication yes
 #AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 ```
 
-```yml
+```bash
 Key'ler için  <-  ( Git Bash ) :
 
 ssh-keygen
-	- enter -> default - publicKey = sunucu | privateKey = kullanıcı
-	- publicKey = sunucu üzerinde authorized_keys.txt dosyası üzerine yazar
+	> enter -> default - publicKey = sunucu | privateKey = kullanıcı
+	> publicKey = sunucu üzerinde authorized_keys.txt dosyası üzerine yazar
 ```
 
 ```cs
@@ -145,7 +145,7 @@ C:\Users\Excalibur\.ssh
 
 ### Jenkins Agent Setup
 
-```yml
+```bash
 Credentials:
 http://localhost:8080/manage/credentials/store/system/domain/_/newCredentials
 Jenkins'i Yönet >> Credentials >> Stores scoped to Jenkins >> (global) >> Add Credentials
@@ -163,7 +163,7 @@ Kind:
 	Create
 ```
 
-```yml
+```bash
 Nodes:
 http://localhost:8080/manage/computer/
 Jenkins'i Yönet >> Nodes (Sunucular ve Bulutlar) >> New Node
@@ -192,7 +192,7 @@ Launch method:
 
 ### Jenkins Pipeline
 
-```yml
+```bash
 http://localhost:8080/job/mvn-project/configure
 Yeni Öğe >> Pipeline
 
