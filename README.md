@@ -63,7 +63,7 @@ vscode extention - docker - image run -> http://localhost:8080/
 Administrator password:
 	Containers -> Files/var/jenkins_home/secrets/initialAdminPassword
 		install suggested plugins
---
+---
 	Dockerfile -> Build Image...
 		 	-> jenkinswithblueocean:latest
 ```
@@ -108,9 +108,9 @@ PowerShell - Administrator:
 // ssh - public key ile bağlanmasını sağlamak için
 // gizli dosya -> Görünüm - Seçenekler - Görünüm
 	C:\ProgramData\ssh\sshd_config	<- Not Defteriyle
---
+---
 	#PubkeyAuthentication yes 	// Açıklamayı kaldır (#)
---
+---
 	Match Group administrators	// Deaktif yap	(# ekle)
 		AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 ```
